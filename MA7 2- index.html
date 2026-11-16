@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MA7 Digital | نبني مستقبلك الرقمي</title>
+<meta name="description" content="MA7 Digital تساعد الأفراد والشركات على بناء حضورهم الرقمي: تصميم وتطوير مواقع، هوية بصرية، وحلول رقمية احترافية.">
+<meta name="keywords" content="MA7 Digital, تصميم مواقع, تطوير مواقع, هوية بصرية, حلول رقمية, website design, web development">
+<meta name="author" content="Mohamed Adel">
+<meta name="copyright" content="MA7 Digital">
+<meta name="owner" content="Mohamed Adel">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<meta name="theme-color" content="#0B1B3B">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="MA7 Digital | نبني مستقبلك الرقمي">
+<meta property="og:description" content="تجارب رقمية احترافية للأفراد والشركات.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230B1B3B'/><text x='32' y='41' font-size='24' font-weight='800' text-anchor='middle' fill='%2300AEEF' font-family='Arial'>MA7</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"MA7 Digital","email":"ma7digital.official@gmail.com","founder":{"@type":"Person","name":"Mohamed Adel"},"description":"Website design, development and digital solutions."}
+</script>
+
+<style>
+:root{
+--navy:#0B1B3B;
+--blue:#00AEEF;
+--sky:#7DD3FC;
+--silver:#C0C6D0;
+--white:#F8FAFC;
+--muted:#B4BFD3;
+--bg:#071329;
+--border:rgba(255,255,255,.10)
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+background:var(--bg);
+color:var(--white);
+font-family:'Cairo','Montserrat',sans-serif;
+line-height:1.8;
+overflow-x:hidden
+}
+
+html[lang=en] body{
+font-family:'Montserrat','Cairo',sans-serif;
+line-height:1.7
+}
+
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+.container{width:min(1140px,90%);margin:auto}
+
+.navbar{
+position:fixed;
+top:0;left:0;right:0;
+z-index:1000;
+background:rgba(7,19,41,.85);
+backdrop-filter:blur(18px);
+border-bottom:1px solid var(--border)
+}
+
+.nav-inner{
+height:78px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:16px
+}
+
+.logo{
+font-size:25px;
+font-weight:800;
+font-family:'Montserrat',sans-serif;
+direction:ltr
+}
+
+.logo span{color:var(--blue)}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:28px;
+list-style:none;
+font-size:14px;
+color:var(--muted)
+}
+
+.nav-links a:hover{color:var(--blue)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+
+.nav-cta,.btn{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+gap:9px;
+padding:13px 23px;
+border-radius:9px;
+background:var(--blue);
+color:#03152A;
+font-weight:800;
+font-size:14px;
+transition:.3s;
+border:1px solid transparent;
+cursor:pointer
+}
+
+.nav-cta:hover,.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 30px rgba(0,174,239,.25)
+}
+
+.menu-btn{
+display:none;
+background:transparent;
+border:0;
+color:#fff;
+font-size:27px;
+cursor:pointer
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+position:relative;
+overflow:hidden;
+padding:140px 0 90px;
+background:
+radial-gradient(circle at 80% 35%,rgba(0,174,239,.16),transparent 30%),
+radial-gradient(circle at 15% 75%,rgba(0,70,150,.18),transparent 35%)
+}
+
+.hero::before{display:none}
+.hero-content{max-width:760px;position:relative;z-index:2}
+
+.eyebrow{
+color:var(--sky);
+font-size:13px;
+letter-spacing:3px;
+font-weight:700;
+margin-bottom:22px;
+text-transform:uppercase
+}
+
+h1{
+font-size:clamp(40px,7vw,74px);
+line-height:1.2;
+letter-spacing:-3px;
+margin-bottom:25px;
+font-weight:800
+}
+
+.gradient-text{
+background:linear-gradient(90deg,var(--blue),var(--sky),var(--silver));
+-webkit-background-clip:text;
+background-clip:text;
+color:transparent
+}
+
+.hero-description{
+color:var(--muted);
+max-width:600px;
+font-size:17px;
+margin-bottom:34px
+}
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+
+.btn-outline{
+background:transparent;
+border-color:rgba(255,255,255,.25);
+color:#fff
+}
+
+.btn-outline:hover{border-color:var(--blue)}
+
+html[dir=rtl] h1,
+html[dir=rtl] .eyebrow,
+html[dir=rtl] .section-label,
+html[dir=rtl] .role{letter-spacing:0}
+
+.section{padding:100px 0}
+
+.section-heading{
+max-width:680px;
+margin-bottom:55px
+}
+
+.section-label{
+color:var(--blue);
+font-size:13px;
+font-weight:800;
+letter-spacing:2px;
+text-transform:uppercase;
+margin-bottom:12px
+}
+
+.section-heading h2,.about-copy h2{
+font-size:clamp(28px,4vw,42px);
+line-height:1.35;
+margin-bottom:18px
+}
+
+.section-heading p{color:var(--muted);font-size:15px}
+
+.grid3{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+
+.card{
+background:linear-gradient(145deg,rgba(16,38,77,.85),rgba(9,25,52,.85));
+border:1px solid var(--border);
+border-radius:17px;
+padding:30px;
+transition:.35s
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:rgba(0,174,239,.5);
+box-shadow:0 20px 50px rgba(0,0,0,.2)
+}
+
+.icon{
+width:52px;
+height:52px;
+display:grid;
+place-items:center;
+border-radius:13px;
+background:rgba(0,174,239,.12);
+color:var(--sky);
+font-size:24px;
+font-weight:800;
+margin-bottom:22px
+}
+
+.card h3{font-size:19px;margin-bottom:12px}
+.card p{color:var(--muted);font-size:14.5px}
+
+.about{
+background:rgba(16,38,77,.22);
+border-block:1px solid var(--border)
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:60px;
+align-items:center
+}
+
+.about-copy p{
+color:var(--muted);
+font-size:15px;
+margin-bottom:15px
+}
+
+.founder-card{
+background:linear-gradient(145deg,#10264D,#09172F);
+border:1px solid rgba(0,174,239,.25);
+border-radius:20px;
+padding:38px;
+position:relative;
+overflow:hidden
+}
+
+.founder-card::after{
+content:"MA7";
+position:absolute;
+inset-inline-end:-10px;
+bottom:-50px;
+font-size:120px;
+font-weight:800;
+color:rgba(255,255,255,.035);
+font-family:'Montserrat',sans-serif
+}
+
+.founder-symbol{
+width:65px;
+height:65px;
+border:1px solid rgba(0,174,239,.5);
+display:grid;
+place-items:center;
+color:var(--sky);
+font-weight:800;
+font-size:22px;
+border-radius:15px;
+margin-bottom:28px;
+font-family:'Montserrat',sans-serif
+}
+
+.role{
+color:var(--blue);
+font-size:12px;
+letter-spacing:2px;
+font-weight:800;
+margin-bottom:7px
+}
+
+.founder-card h3{font-size:25px;margin-bottom:10px}
+.founder-card p{color:var(--muted);font-size:14.5px}
+
+.project-visual{
+height:155px;
+border-radius:12px;
+margin-bottom:22px;
+padding:14px;
+display:flex;
+flex-direction:column;
+gap:9px;
+background:
+radial-gradient(circle at 70% 30%,rgba(0,174,239,.3),transparent 35%),
+linear-gradient(135deg,#10264D,#071329);
+border:1px solid var(--border);
+direction:ltr
+}
+
+.project-visual .dots{display:flex;gap:5px}
+
+.project-visual .dots i{
+width:8px;
+height:8px;
+border-radius:50%;
+background:rgba(255,255,255,.25)
+}
+
+.project-visual b{
+display:block;
+height:10px;
+border-radius:5px;
+background:rgba(125,211,252,.28)
+}
+
+.project-visual b.cta{
+width:30%;
+height:16px;
+background:var(--blue);
+opacity:.8;
+margin-top:auto
+}
+
+.concept-tag{
+display:inline-block;
+margin-top:14px;
+color:var(--sky);
+font-size:12px;
+border:1px solid rgba(0,174,239,.3);
+padding:4px 11px;
+border-radius:20px
+}
+
+.step-num{
+font-family:'Montserrat',sans-serif;
+font-size:38px;
+font-weight:800;
+color:rgba(0,174,239,.35);
+line-height:1;
+margin-bottom:14px
+}
+
+.faq{max-width:780px}
+
+.faq details{
+background:rgba(16,38,77,.5);
+border:1px solid var(--border);
+border-radius:13px;
+padding:18px 22px;
+margin-bottom:12px
+}
+
+.faq summary{
+cursor:pointer;
+font-weight:700;
+font-size:16px;
+list-style:none;
+display:flex;
+justify-content:space-between;
+gap:14px
+}
+
+.faq summary::-webkit-details-marker{display:none}
+
+.faq summary::after{
+content:"+";
+color:var(--blue);
+font-size:22px;
+line-height:1
+}
+
+.faq details[open] summary::after{content:"–"}
+
+.faq details p{
+color:var(--muted);
+font-size:14.5px;
+margin-top:12px
+}
+
+.contact{
+background:radial-gradient(circle at 50% 100%,rgba(0,174,239,.14),transparent 45%)
+}
+
+.contact-wrap{
+max-width:640px;
+margin:auto;
+text-align:center
+}
+
+.contact-wrap .section-heading{margin:0 auto 30px}
+
+.form{display:grid;gap:14px;text-align:start}
+
+.form label{
+font-size:13px;
+color:var(--muted);
+font-weight:600;
+display:block;
+margin-bottom:5px
+}
+
+.form input,.form select,.form textarea{
+width:100%;
+padding:13px 15px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,.15);
+background:rgba(16,38,77,.55);
+color:#fff;
+font-size:15px;
+outline:none;
+transition:.25s
+}
+
+.form select option{background:#0B1B3B}
+
+.form input:focus,.form select:focus,.form textarea:focus{
+border-color:var(--blue);
+box-shadow:0 0 0 3px rgba(0,174,239,.15)
+}
+
+.form textarea{min-height:110px;resize:vertical}
+.form .btn{width:100%;padding:15px}
+
+.form-note{
+color:var(--muted);
+font-size:12.5px;
+text-align:center
+}
+
+.contact-email{
+display:inline-block;
+color:var(--sky);
+font-weight:700;
+margin-top:22px;
+word-break:break-word;
+direction:ltr
+}
+
+footer{
+border-top:1px solid var(--border);
+padding:35px 0;
+color:var(--muted);
+font-size:13px
+}
+
+.footer-inner{
+display:flex;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap
+}
+
+.footer-brand{
+color:#fff;
+font-size:18px;
+font-weight:800;
+font-family:'Montserrat',sans-serif;
+direction:ltr;
+display:inline-block
+}
+
+.footer-brand span{color:var(--blue)}
+.copyright-note{margin-top:9px}
+
+.social{display:flex;gap:14px;margin-top:12px}
+
+.social a{
+border:1px solid var(--border);
+border-radius:8px;
+padding:4px 12px;
+font-size:12px
+}
+
+.social a:hover{border-color:var(--blue);color:var(--blue)}
+
+.wa-float{
+position:fixed;
+bottom:20px;
+inset-inline-end:20px;
+z-index:999;
+display:flex;
+align-items:center;
+gap:8px;
+background:#25D366;
+color:#053B1B;
+font-weight:800;
+font-size:14px;
+padding:12px 18px;
+border-radius:50px;
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+transition:.3s
+}
+
+.wa-float:hover{transform:translateY(-3px)}
+
+.reveal{
+opacity:0;
+transform:translateY(25px);
+transition:opacity .7s ease,transform .7s ease
+}
+
+.reveal.visible{opacity:1;transform:none}
+
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-22px)}
+}
+
+@media(max-width:850px){
+.grid3{grid-template-columns:repeat(2,1fr)}
+.about-grid{grid-template-columns:1fr;gap:35px}
+}
+
+@media(max-width:650px){
+.nav-inner{height:68px}
+.menu-btn{display:block}
+.nav-cta{display:none}
+
+.nav-links{
+display:none;
+position:absolute;
+top:68px;
+left:0;
+right:0;
+padding:25px 5%;
+background:#09172F;
+flex-direction:column;
+align-items:flex-start;
+border-bottom:1px solid var(--border)
+}
+
+.nav-links.open{display:flex}
+.hero{min-height:90vh}
+h1{letter-spacing:-1.5px}
+.hero-description{font-size:15px}
+.section{padding:75px 0}
+.grid3{grid-template-columns:1fr}
+.card{padding:24px}
+.founder-card{padding:28px}
+.footer-inner{flex-direction:column}
+.wa-float span{display:none}
+.wa-float{padding:14px;font-size:20px}
+}
+
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{
+scroll-behavior:auto!important;
+animation-duration:.01ms!important;
+transition-duration:.01ms!important
+}
+}
+
+:focus-visible{
+outline:2px solid var(--blue);
+outline-offset:3px;
+border-radius:4px
+}
+
+.skip{
+position:absolute;
+top:-60px;
+inset-inline-start:10px;
+z-index:2000;
+background:var(--blue);
+color:#03152A;
+padding:10px 16px;
+border-radius:8px;
+font-weight:700
+}
+
+.skip:focus{top:10px}
+.navbar{transition:.3s}
+
+.navbar.scrolled{
+background:rgba(7,19,41,.96);
+box-shadow:0 8px 30px rgba(0,0,0,.25)
+}
+
+.glow{
+position:absolute;
+width:400px;
+height:400px;
+border-radius:50%;
+filter:blur(120px);
+opacity:.23;
+background:var(--blue);
+animation:float 8s ease-in-out infinite
+}
+
+.glow.one{top:8%;inset-inline-end:-150px}
+.glow.two{bottom:-150px;inset-inline-start:-100px;background:#3157D5}
+
+.badges{
+display:flex;
+flex-wrap:wrap;
+gap:10px 22px;
+margin-top:34px;
+color:var(--muted);
+font-size:14px;
+font-weight:600
+}
+
+.badges span::before{
+content:"✓";
+color:var(--blue);
+font-weight:800;
+margin-inline-end:7px
+}
+
+.grid4{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px
+}
+
+.grid4 .card{padding:26px}
+
+.ownership{
+margin-top:26px;
+padding-top:22px;
+border-top:1px solid var(--border);
+font-size:12.5px;
+line-height:1.9
+}
+
+.ownership-title{
+color:#fff;
+font-weight:800;
+font-size:12px;
+letter-spacing:1.5px;
+margin-bottom:6px
+}
+
+html[dir=rtl] .ownership-title{letter-spacing:0}
+
+@media(max-width:850px){
+.grid4{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:650px){
+.grid4{grid-template-columns:1fr}
+.badges{gap:8px 16px}
+}
+
+.lang-switch{
+display:flex;
+border:1px solid rgba(255,255,255,.2);
+border-radius:8px;
+overflow:hidden;
+direction:ltr
+}
+
+.lang-switch button{
+background:transparent;
+border:0;
+color:var(--muted);
+padding:7px 12px;
+font-size:13px;
+font-weight:700;
+cursor:pointer;
+transition:.25s
+}
+
+.lang-switch button.on{
+background:var(--blue);
+color:#03152A
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#main" data-en="Skip to content">تخطَّ إلى المحتوى</a>
+
+<header class="navbar">
+<div class="container nav-inner">
+
+<a href="#home" class="logo">MA7<span>.</span></a>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#home" data-en="Home">الرئيسية</a></li>
+<li><a href="#services" data-en="Services">خدماتنا</a></li>
+<li><a href="#about" data-en="About">من نحن</a></li>
+<li><a href="#projects" data-en="Portfolio">أعمالنا</a></li>
+<li><a href="#faq" data-en="FAQ">الأسئلة الشائعة</a></li>
+<li><a href="#contact" data-en="Contact">تواصل معنا</a></li>
+</ul>
+
+<div class="nav-actions">
+
+<div class="lang-switch" role="group" aria-label="Language / اللغة">
+<button type="button" data-lang="ar">عربي</button>
+<button type="button" data-lang="en">EN</button>
+</div>
+
+<a class="nav-cta" href="#contact" data-en="Let's Talk ↗">كلمنا ↗</a>
+
+<button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+
+</div>
+</div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="home">
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+<div class="container">
+<div class="hero-content reveal">
+
+<div class="eyebrow" data-en="MA7 DIGITAL — DIGITAL AGENCY">MA7 DIGITAL — وكالة رقمية</div>
+
+<h1 data-en="Building Your<br><span class='gradient-text'>Digital Future.</span>">
+نبني مستقبلك<br>
+<span class="gradient-text">الرقمي.</span>
+</h1>
+
+<p class="hero-description" data-en="We create modern digital experiences that help individuals and businesses grow, connect, and stand out in a digital world.">
+نصمم تجارب رقمية حديثة تساعد الأفراد والشركات على النمو والتواصل والتميّز في العالم الرقمي.
+</p>
+
+<div class="hero-actions">
+<a class="btn" href="#services" data-en="Explore Our Services ↗">اكتشف خدماتنا ↗</a>
+<a class="btn btn-outline" href="#contact" data-en="Start Your Project">ابدأ مشروعك</a>
+</div>
+
+<div class="badges">
+<span data-en="Responsive design">تصميم متجاوب</span>
+<span data-en="Clear communication">تواصل واضح</span>
+<span data-en="Support after launch">دعم بعد الإطلاق</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="container">
+
+<div class="section-heading reveal">
+<div class="section-label" data-en="What We Do">ماذا نقدم</div>
+
+<h2 data-en="Digital solutions.<br><span class='gradient-text'>Designed to move you forward.</span>">
+حلول رقمية.<br>
+<span class="gradient-text">مصممة لتدفعك للأمام.</span>
+</h2>
+
+<p data-en="We focus on creating useful, modern and professional digital solutions tailored to your goals.">
+نركّز على تقديم حلول رقمية عملية وحديثة واحترافية، مصممة حسب أهدافك.
+</p>
+</div>
+
+<div class="grid3">
+
+<article class="card reveal">
+<div class="icon">⌘</div>
+<h3 data-en="Website Design &amp; Development">تصميم وتطوير المواقع</h3>
+<p data-en="Responsive and modern websites designed to present your brand, communicate your value and support your business goals.">
+مواقع حديثة ومتجاوبة مع كل الشاشات تعرض علامتك التجارية وتوصّل قيمتك وتدعم أهداف عملك.
+</p>
+</article>
+
+<article class="card reveal">
+<div class="icon">✧</div>
+<h3 data-en="Visual Identity">الهوية البصرية</h3>
+<p data-en="Professional visual direction, logo concepts, colors and typography that help your brand build a consistent identity.">
+اتجاه بصري احترافي، أفكار للشعار، وألوان وخطوط تساعد علامتك على بناء هوية متسقة.
+</p>
+</article>
+
+<article class="card reveal">
+<div class="icon">◈</div>
+<h3 data-en="Digital Solutions">حلول رقمية</h3>
+<p data-en="Practical digital tools and custom solutions planned around your workflow, customers and business needs.">
+أدوات وحلول رقمية مخصصة مبنية حول طريقة عملك وعملائك واحتياجات نشاطك.
+</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="why" style="padding-top:0">
+<div class="container">
+
+<div class="section-heading reveal">
+<div class="section-label" data-en="Why MA7">لماذا MA7</div>
+<h2 data-en="Built with <span class='gradient-text'>quality in mind.</span>">
+مبني على <span class="gradient-text">الجودة.</span>
+</h2>
+</div>
+
+<div class="grid4">
+
+<article class="card reveal">
+<div class="icon">⚡</div>
+<h3 data-en="Fast &amp; Light">سريع وخفيف</h3>
+<p data-en="Clean, lightweight code so your website opens quickly.">كود نظيف وخفيف يخلّي موقعك يفتح بسرعة.</p>
+</article>
+
+<article class="card reveal">
+<div class="icon">📱</div>
+<h3 data-en="Fully Responsive">متجاوب تماماً</h3>
+<p data-en="Looks great on phones, tablets and computers.">شكل ممتاز على الموبايل والتابلت والكمبيوتر.</p>
+</article>
+
+<article class="card reveal">
+<div class="icon">🔍</div>
+<h3 data-en="SEO-Ready">جاهز لمحركات البحث</h3>
+<p data-en="Proper structure that helps your website appear in search results.">هيكلة سليمة تساعد موقعك على الظهور في نتائج البحث.</p>
+</article>
+
+<article class="card reveal">
+<div class="icon">🤝</div>
+<h3 data-en="Clear Communication">تواصل ودعم</h3>
+<p data-en="We keep you updated and stay available after launch.">نبقيك على اطلاع ونظل متاحين بعد الإطلاق.</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="process" style="padding-top:0">
+<div class="container">
+
+<div class="section-heading reveal">
+<div class="section-label" data-en="How We Work">طريقة العمل</div>
+<h2 data-en="Simple steps, <span class='gradient-text'>clear results.</span>">
+خطوات بسيطة، <span class="gradient-text">ونتيجة واضحة.</span>
+</h2>
+</div>
+
+<div class="grid3">
+
+<article class="card reveal">
+<div class="step-num">01</div>
+<h3 data-en="Discuss &amp; Plan">نتكلم ونخطّط</h3>
+<p data-en="You tell us your idea and goals, and we agree on scope, timeline and price.">
+تحكي لنا فكرتك وأهدافك، ونتفق على المطلوب والمدة والسعر.
+</p>
+</article>
+
+<article class="card reveal">
+<div class="step-num">02</div>
+<h3 data-en="Design &amp; Build">نصمّم ونبني</h3>
+<p data-en="We design and develop your project, sharing progress so you can give feedback.">
+نصمم ونطوّر مشروعك ونعرض عليك التقدم أولاً بأول لتبدي رأيك.
+</p>
+</article>
+
+<article class="card reveal">
+<div class="step-num">03</div>
+<h3 data-en="Launch &amp; Support">نطلق وندعمك</h3>
+<p data-en="We publish your project and stay available to fix issues and answer questions.">
+ننشر مشروعك ونظل متاحين لحل أي مشكلة والإجابة عن أسئلتك.
+</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="section about" id="about">
+<div class="container about-grid">
+
+<div class="about-copy reveal">
+<div class="section-label" data-en="About MA7 Digital">عن MA7 Digital</div>
+
+<h2 data-en="We turn ideas into <span class='gradient-text'>digital experiences.</span>">
+نحوّل الأفكار إلى <span class="gradient-text">تجارب رقمية.</span>
+</h2>
+
+<p data-en="MA7 Digital is an emerging digital brand focused on website design, development and digital solutions for individuals and businesses.">
+MA7 Digital علامة رقمية ناشئة تركّز على تصميم وتطوير المواقع والحلول الرقمية للأفراد والشركات.
+</p>
+
+<p data-en="Our approach is built around thoughtful design, clear communication, usability and attention to detail.">
+يقوم أسلوبنا على التصميم المدروس، والتواصل الواضح، وسهولة الاستخدام، والاهتمام بالتفاصيل.
+</p>
+
+<p data-en="We believe every strong digital presence starts with a clear idea and a commitment to quality.">
+نؤمن أن كل حضور رقمي قوي يبدأ بفكرة واضحة والتزام بالجودة.
+</p>
+</div>
+
+<div class="founder-card reveal">
+<div class="founder-symbol">MA7</div>
+<div class="role" data-en="FOUNDER &amp; CEO">المؤسس والرئيس التنفيذي</div>
+<h3 data-en="Mohamed Adel">محمد عادل</h3>
+<p data-en="Founder of MA7 Digital, working to build a modern digital brand focused on creative technology and professional digital experiences.">
+مؤسس MA7 Digital، يعمل على بناء علامة رقمية حديثة تركّز على التكنولوجيا الإبداعية والتجارب الرقمية الاحترافية.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="projects">
+<div class="container">
+
+<div class="section-heading reveal">
+<div class="section-label" data-en="Selected Concepts">أفكار مختارة</div>
+
+<h2 data-en="Ideas shaped into <span class='gradient-text'>experiences.</span>">
+أفكار تتحول إلى <span class="gradient-text">تجارب.</span>
+</h2>
+
+<p data-en="A preview of the types of digital projects MA7 Digital aims to create. These are concept examples, not completed client projects.">
+نظرة على أنواع المشاريع التي تهدف MA7 Digital لتنفيذها. هذه نماذج تصورية وليست مشاريع عملاء منتهية.
+</p>
+</div>
+
+<div class="grid3">
+
+<article class="card reveal">
+<div class="project-visual">
+<div class="dots"><i></i><i></i><i></i></div>
+<b style="width:70%"></b>
+<b style="width:45%"></b>
+<b class="cta"></b>
+</div>
+<h3 data-en="Business Website Concept">تصور موقع شركة</h3>
+<p data-en="A clean digital presence for a modern service business.">حضور رقمي مرتب لنشاط خدمي حديث.</p>
+<span class="concept-tag" data-en="Concept Project">مشروع تصوري</span>
+</article>
+
+<article class="card reveal">
+<div class="project-visual">
+<div class="dots"><i></i><i></i><i></i></div>
+<b style="width:55%"></b>
+<b style="width:80%"></b>
+<b class="cta"></b>
+</div>
+<h3 data-en="Digital Store Concept">تصور متجر إلكتروني</h3>
+<p data-en="A modern shopping experience with clear product presentation.">تجربة تسوق حديثة مع عرض واضح للمنتجات.</p>
+<span class="concept-tag" data-en="Concept Project">مشروع تصوري</span>
+</article>
+
+<article class="card reveal">
+<div class="project-visual">
+<div class="dots"><i></i><i></i><i></i></div>
+<b style="width:40%"></b>
+<b style="width:65%"></b>
+<b class="cta"></b>
+</div>
+<h3 data-en="Personal Portfolio Concept">تصور معرض أعمال شخصي</h3>
+<p data-en="A professional platform for presenting skills and work.">منصة احترافية لعرض المهارات والأعمال.</p>
+<span class="concept-tag" data-en="Concept Project">مشروع تصوري</span>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="faq" style="padding-top:0">
+<div class="container faq">
+
+<div class="section-heading reveal">
+<div class="section-label" data-en="FAQ">الأسئلة الشائعة</div>
+<h2 data-en="Questions? <span class='gradient-text'>Answered.</span>">
+عندك سؤال؟ <span class="gradient-text">هنا الإجابة.</span>
+</h2>
+</div>
+
+<details class="reveal">
+<summary><span data-en="How long does a website take?">كم يستغرق تنفيذ الموقع؟</span></summary>
+<p data-en="It depends on the size of the project. A simple website usually takes from a few days to two weeks; we agree on the timeline before starting.">
+يعتمد على حجم المشروع. الموقع البسيط غالباً من بضعة أيام إلى أسبوعين، ونتفق على المدة قبل البدء.
+</p>
+</details>
+
+<details class="reveal">
+<summary><span data-en="How much does it cost?">كم التكلفة؟</span></summary>
+<p data-en="Pricing depends on your needs. Send us your idea and we will give you a clear quote.">
+يعتمد السعر على احتياجاتك. أرسل لنا فكرتك وسنعطيك عرض سعر واضح.
+</p>
+</details>
+
+<details class="reveal">
+<summary><span data-en="Will my website work on mobile?">هل الموقع يعمل على الموبايل؟</span></summary>
+<p data-en="Yes. Every website we build is responsive and works on phones, tablets and computers.">
+نعم. كل موقع نبنيه متجاوب ويعمل على الموبايل والتابلت والكمبيوتر.
+</p>
+</details>
+
+<details class="reveal">
+<summary><span data-en="Do you offer support after launch?">هل يوجد دعم بعد التسليم؟</span></summary>
+<p data-en="Yes, we stay available after launch to fix issues and help with updates.">
+نعم، نظل متاحين بعد الإطلاق لحل المشاكل والمساعدة في التحديثات.
+</p>
+</details>
+
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="container contact-wrap">
+
+<div class="section-heading reveal">
+<div class="section-label" data-en="Start a Project">ابدأ مشروعك</div>
+
+<h2 data-en="Let's build something <span class='gradient-text'>great.</span>">
+خلّينا نبني شيئاً <span class="gradient-text">مميزاً.</span>
+</h2>
+
+<p data-en="Tell us about your idea and we will reply on WhatsApp.">
+احكِ لنا عن فكرتك وسنرد عليك عبر واتساب.
+</p>
+</div>
+
+<form class="form reveal" id="contactForm">
+
+<div>
+<label for="fName" data-en="Name">الاسم</label>
+<input id="fName" required autocomplete="name">
+</div>
+
+<div>
+<label for="fService" data-en="Service">الخدمة المطلوبة</label>
+<select id="fService">
+<option data-en="Website Design &amp; Development">تصميم وتطوير مواقع</option>
+<option data-en="Visual Identity">هوية بصرية</option>
+<option data-en="Digital Solutions">حلول رقمية</option>
+<option data-en="Other">أخرى</option>
+</select>
+</div>
+
+<div>
+<label for="fMsg" data-en="Your idea">فكرتك</label>
+<textarea id="fMsg" required data-ph-en="Briefly describe your project..." placeholder="اشرح مشروعك باختصار..."></textarea>
+</div>
+
+<button class="btn" type="submit" data-en="Send via WhatsApp ↗">أرسل عبر واتساب ↗</button>
+
+<p class="form-note" data-en="The form opens WhatsApp with your message ready to send.">
+النموذج يفتح واتساب برسالتك جاهزة للإرسال.
+</p>
+
+</form>
+
+<a class="contact-email" href="mailto:ma7digital.official@gmail.com?subject=Project%20Inquiry%20-%20MA7%20Digital">
+ma7digital.official@gmail.com
+</a>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container footer-inner">
+
+<div>
+<div class="footer-brand">MA7<span>.</span> DIGITAL</div>
+
+<div class="copyright-note" data-en="Building Your Digital Future.<br>Independently managed digital brand.<br>Founded by Mohamed Adel.">
+نبني مستقبلك الرقمي.<br>
+علامة رقمية تُدار باستقلالية.<br>
+أسسها محمد عادل.
+</div>
+
+<!-- استبدل # بروابط حساباتك الحقيقية -->
+<div class="social">
+<a href="#" data-en="Facebook">فيسبوك</a>
+<a href="#" data-en="Instagram">إنستجرام</a>
+<a href="#" data-en="LinkedIn">لينكدإن</a>
+</div>
+
+</div>
+
+<div>
+© <span id="year"></span> MA7 Digital.
+<span data-en="All rights reserved.">جميع الحقوق محفوظة.</span>
+</div>
+
+</div>
+
+<div class="container ownership">
+<div class="ownership-title" data-en="WEBSITE OWNERSHIP &amp; COPYRIGHT">ملكية الموقع وحقوق النشر</div>
+
+<p data-en="MA7 Digital is an independently managed digital brand, founded and owned by Mohamed Adel. Unauthorized reproduction of the original website content and design is not permitted.">
+MA7 Digital علامة رقمية تُدار باستقلالية، أسسها ويملكها محمد عادل. يُمنع نسخ محتوى الموقع الأصلي أو تصميمه دون إذن.
+</p>
+</div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+💬 <span data-en="WhatsApp">واتساب</span>
+</a>
+
+<script>
+
+// رقم واتساب بصيغة دولية بدون + أو أصفار
+const WA_NUMBER = "201108604227";
+
+const $ = id => document.getElementById(id);
+
+const metaDesc = document.querySelector('meta[name="description"]');
+
+const T = {
+
+ar: {
+title: "MA7 Digital | نبني مستقبلك الرقمي",
+desc: metaDesc.content,
+wa: "مرحباً MA7 Digital، أريد الاستفسار عن مشروع.",
+n: "الاسم",
+s: "الخدمة",
+m: "الفكرة"
+},
+
+en: {
+title: "MA7 Digital | Building Your Digital Future",
+desc: "MA7 Digital helps individuals and businesses build their digital presence: website design and development, visual identity and digital solutions.",
+wa: "Hello MA7 Digital, I'd like to ask about a project.",
+n: "Name",
+s: "Service",
+m: "Idea"
+}
+
+};
+
+let lang = "ar";
+
+function setLang(l){
+
+lang = l;
+
+document.documentElement.lang = l;
+document.documentElement.dir = l === "ar" ? "rtl" : "ltr";
+
+document.querySelectorAll("[data-en]").forEach(e => {
+
+if(!e.dataset.ar) e.dataset.ar = e.innerHTML;
+
+e.innerHTML = l === "en" ? e.dataset.en : e.dataset.ar;
+
+});
+
+document.querySelectorAll("[data-ph-en]").forEach(e => {
+
+if(!e.dataset.phAr) e.dataset.phAr = e.placeholder;
+
+e.placeholder = l === "en" ? e.dataset.phEn : e.dataset.phAr;
+
+});
+
+document.title = T[l].title;
+metaDesc.content = T[l].desc;
+
+document.querySelectorAll(".lang-switch button").forEach(b => {
+
+const on = b.dataset.lang === l;
+
+b.classList.toggle("on",on);
+b.setAttribute("aria-pressed",on);
+
+});
+
+$("waFloat").href =
+"https://wa.me/" + WA_NUMBER +
+"?text=" + encodeURIComponent(T[l].wa);
+
+try{
+localStorage.setItem("lang",l);
+}catch(e){}
+
+}
+
+let saved = null;
+
+try{
+saved = localStorage.getItem("lang");
+}catch(e){}
+
+setLang(
+saved === "en" || saved === "ar"
+? saved
+: ((navigator.language || "ar").toLowerCase().startsWith("ar") ? "ar" : "en")
+);
+
+document.querySelectorAll(".lang-switch button").forEach(b => {
+
+b.addEventListener("click",() => setLang(b.dataset.lang));
+
+});
+
+$("menuBtn").addEventListener("click",() => {
+
+$("navLinks").classList.toggle("open");
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(a => {
+
+a.addEventListener("click",() => {
+
+$("navLinks").classList.remove("open");
+
+});
+
+});
+
+$("year").textContent = new Date().getFullYear();
+
+$("contactForm").addEventListener("submit",e => {
+
+e.preventDefault();
+
+const t = T[lang];
+const sel = $("fService");
+
+const msg =
+`${t.wa}
+${t.n}: ${$("fName").value.trim()}
+${t.s}: ${sel.options[sel.selectedIndex].textContent}
+${t.m}: ${$("fMsg").value.trim()}`;
+
+window.open(
+"https://wa.me/" + WA_NUMBER +
+"?text=" + encodeURIComponent(msg),
+"_blank",
+"noopener"
+);
+
+});
+
+const nav = document.querySelector(".navbar");
+
+addEventListener("scroll",() => {
+
+nav.classList.toggle("scrolled",scrollY > 20);
+
+},{passive:true});
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(en => {
+
+if(en.isIntersecting){
+
+en.target.classList.add("visible");
+
+observer.unobserve(en.target);
+
+}
+
+});
+
+},{threshold:0.12});
+
+document.querySelectorAll(".reveal").forEach(el => {
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+</html>
